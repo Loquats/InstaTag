@@ -1,0 +1,164 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(250, 250, 250);
+}
+
+.header,
+.marketing,
+.footer {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.header {
+    padding-bottom: 20px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(229, 229, 229);
+}
+
+.header h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 40px;
+}
+
+.footer {
+    padding-top: 19px;
+    color: rgb(119, 119, 119);
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(229, 229, 229);
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+}
+
+.container-narrow > hr {
+    margin: 30px 0px;
+}
+
+.jumbotron {
+    text-align: center;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(229, 229, 229);
+}
+
+.jumbotron .btn {
+    padding: 14px 24px;
+    font-size: 21px;
+}
+
+.marketing {
+    margin: 40px 0px;
+}
+
+.marketing p + h4 {
+    margin-top: 28px;
+}
+
+.aboutus {
+    padding: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(18,86,136);
+    border-radius: 5px;
+    margin: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14pt;
+    text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+    .header,
+    .marketing,
+    .footer {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .header {
+        margin-bottom: 30px;
+    }
+    .jumbotron {
+        border-bottom-width: 0px;
+    }
+}
+
+#jumbotrontitle {
+    font-family: 'Oleo Script', cursive;
+    color: rgb(18, 86, 136);
+}
+
+#center-box {
+    background-color: rgb(250, 250, 250);
+}
+
+#center-box > h1 {
+    margin-bottom: 30px;
+    font-family: 'Oleo Script', cursive;
+    color: rgb(18, 86, 136);
+}
+
+#subtitle {
+    color: rgb(18, 86, 136);
+}
+
+#main-img {
+    margin: 2em 2em 1em 0em;
+    max-height: 400px;
+    max-width: 400px;
+    object-fit: contain;
+    border: 1px solid #edeeee;
+    border-radius: 3px;
+}
+
+#caption {
+    color: rgb(18,86,136);
+}
+
+.row-btn {
+    text-align: center;
+}
+
+.row-btn > span, p {
+    display: inline-block;
+}
+
+#group-pic {
+    
+    border: 1px solid #edeeee;
+    border-radius: 3px;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    opacity: 0;
+    outline: none;
+    cursor: inherit;
+    display: block;
+    background: white;
+}
+
+#bar-div > div{
+    width: 80%;
+}
+
+#url-row {
+    margin-top: 2em;
+}
