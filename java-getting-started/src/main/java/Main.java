@@ -68,6 +68,13 @@ public class Main {
         return gson.toJson(hashtags);
     });
 
+    post("/tagurl", (request, response) -> {
+        Gson gson = new Gson();
+        Tag[] tags = Tagger.tag(new RecognitionRequest(request.body()))[0];
+        ArrayList<ArrayList<String> > hashtags = Branch.branchTags(tags);
+        return gson.toJson(hashtags);
+    });
+
     get("/hello", (req, res) -> {
       ClarifaiClient clarifai = new ClarifaiClient("5MJ-DS69ldGpnRN0XEht3I_bshR_lHe1fIn1MeXp", 
         "DO_M_zVOM63rft3hR9PMN5t8QlxUF75hBTHgFUfr");
@@ -82,11 +89,9 @@ public class Main {
     });
 
     get("/", (request, response) -> {
-            Map<String, Object> attributes = new HashMap<>();
-            attributes.put("message", "Hello World!");
-
-            return new ModelAndView(attributes, "index.ftl");
-        }, new FreeMarkerEngine());
+            response.redirect("/hashbrown.html", 301);
+            return "ayy lmao";
+        });
 
     get("/db", (req, res) -> {
       Connection connection = null;

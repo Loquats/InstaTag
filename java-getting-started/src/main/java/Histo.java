@@ -3,7 +3,7 @@ import java.util.*;
 public class Histo{
 	private HashMap<String, Double> m = new HashMap<>();
 	public void put(String s, double d){
-		if(s.isEmpty() || !s.matches("\\w+") || s.contains("follow") || s.contains("like")){
+		if(s.isEmpty() || !s.matches("\\w+") || s.contains("follow") || s.contains("like") || s.contains("blackout")){
 			return;
 		}
 		s = s.toLowerCase();

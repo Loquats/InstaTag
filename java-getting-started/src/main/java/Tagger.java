@@ -4,11 +4,13 @@ import java.io.*;
 
 public class Tagger{
 	//andy
+		static final ClarifaiClient clarifai = new ClarifaiClient("637LVm8DH2FGiTgOxkp9-5K3StW399qGOCckBMT0", 
+       "1q3z-ltQwGKAdoA8ZxvMd4wiOCRRygryQkW6ksRg");
 	//client id: 637LVm8DH2FGiTgOxkp9-5K3StW399qGOCckBMT0
 	// client secret: 1q3z-ltQwGKAdoA8ZxvMd4wiOCRRygryQkW6ksRg
 	//andrew
-	static final ClarifaiClient clarifai = new ClarifaiClient("5MJ-DS69ldGpnRN0XEht3I_bshR_lHe1fIn1MeXp", 
-       "DO_M_zVOM63rft3hR9PMN5t8QlxUF75hBTHgFUfr");
+	// static final ClarifaiClient clarifai = new ClarifaiClient("5MJ-DS69ldGpnRN0XEht3I_bshR_lHe1fIn1MeXp", 
+ //       "DO_M_zVOM63rft3hR9PMN5t8QlxUF75hBTHgFUfr");
 	//shao
 	//static final ClarifaiClient clarifai = new ClarifaiClient("BghyAs4zcj2rDBYvyCc5dYnKzcruf0jr87u3I6y3", 
     //    "-BVg3iP14k7TOYe-xa8DbvXvpcOKMFP0CB2aG3r2");

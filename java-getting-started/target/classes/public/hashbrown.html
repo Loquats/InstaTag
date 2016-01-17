@@ -36,7 +36,15 @@
             <h1 style="margin-bottom: 0em; margin-top: 0em;">#instatag</h1>
             <img id="main-img" src="img/rsz_hashbrown_logo_small.png">
         </div>
-        <div class="jumbotron" style="display: none;" contenteditable="false" id="caption"></div>
+        <div contenteditable="false" id="caption" class="row row-btn">
+            <h3 class="text-muted" id="jumbotronTitle">#popular tags</h3>
+            <p id="popular">asdf</p>
+            <h3 class="text-muted" id="jumbotronTitle">#hipster tags</h3>
+            <p id="eccentric">asdf</p>
+            <h3 class="text-muted" id="jumbotronTitle">#common tags</h3>
+            <p id="common">fdas</p>
+            <br/><br/>
+        </div>
         <div id="upload-row" class="row row-btn">
             <div class="col-xs-12">
             <form enctype="multipart/form-data" id="uploadform" action="tag" method="post">
@@ -50,9 +58,9 @@
         <div id="url-field" class="row">
             <div class="col-sm-12 centered">
                 <div class="input-group">
-                  <input type="text" class="form-control input-lg" placeholder="Media URL...">
+                  <input type="text" class="form-control input-lg" id="mediaurl" placeholder="Media URL...">
                   <span class="input-group-btn">
-                    <button class="btn btn-lg btn-secondary" type="button">Upload</button>
+                    <button id="uploadurl" class="btn btn-lg btn-secondary" type="button">Upload</button>
                   </span>
                 </div>
         <br/><br/><br/>
